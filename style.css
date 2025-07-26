@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+    height: 10vh;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 40px;
+    height: 5vh;
+    width: 24vw;
+}
+
+.nav ul {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav ul li:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav ul li:active {
+    color: rgb(23, 255, 178);
+}
+
+.button button {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    height: 4vh;
+    width: 8vw;
+    font-size: 0.7vw;
+}
+
+.button button:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.top {
+    text-align: center;
+    font-size: 12vw;
+}
+
+.top-down {
+    font-size: 0.8vw;
+    font-family: monospace;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    padding: 0px 70px;
+    gap: 40px;
+}
+
+.left-side {
+    padding: 50px 0px;
+    width: 50vw;
+}
+
+.left-side span {
+    font-size: 4vw;
+}
+
+.left-side p {
+    font-family: monospace;
+    color: gray;
+    font-size: 1.5vw;
+}
+
+.right-side {
+    margin: 30px 0px;
+    background-image: url(hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    padding: 20px 0px;
+}
+
+.section-of-bottom {
+    font-weight: 100;
+    padding: 190px 0px 0px 0px;
+}
+
+.hero-section-2 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 70px;
+
+}
+
+.left-picture {
+    background-image: url(hero-img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 45vw;
+    height: 65vh;
+}
+
+
+.right-text {
+    padding: 50px 100px;
+    width: 60vw;
+}
+
+.right-text span {
+    font-size: 4vw;
+}
+
+.right-text p {
+    padding: 200px 0px 0px 0px;
+    font-family: monospace;
+    color: gray;
+    font-size: 1.5vw;
+}
+
+.hero-section-3 {
+    animation: grow linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 70px;
+    height: 80vh;
+}
+
+.left-text {
+    padding: 50px 0px 0px 0px;
+    width: 60vw;
+}
+
+.left-text span {
+    font-size: 4vw;
+}
+
+.right-image {
+    background-image: url(hero-3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 100px;
+    width: 40vw;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.branding-service span {
+    font-size: 1.3vw;
+}
+
+.branding-service p {
+    padding: 10px 0px;
+    color: gray;
+    font-family: monospace;
+    font-size: 1vw;
+}
+
+.branding-service hr {
+    margin-bottom: 20px;
+}
+
+.hero-section-4 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px 70px;
+}
+
+.main-text {
+    font-size: 10.5vw;
+}
+
+.center-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.left-img-1 {
+    background-image: url(hero-img-4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 60vh;
+
+}
+
+.center-img-1 {
+    background-image: url(hero-img-4.0.jpg);
+    background-size: cover;
+    width: 28vw;
+}
+
+.right-text-1 {
+    padding: 20px 0px;
+    width: 28vw;
+}
+
+.right-text-1 span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.2vw;
+}
+
+.right-text-1 p {
+    font-family: monospace;
+    color: gray;
+    font-size: 1.2vw;
+}
+
+footer {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    font-family: 'Montserrat';
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 80vh;
+    padding: 100px;
+}
+
+footer h1 {
+    font-size: 12vw;
+}
+
+footer p {
+    font-size: 3vw;
+}
+
+footer button {
+    border-radius: 40px;
+    width: 8vw;
+    height: 5vh;
+}
+
+footer button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.subfooter {
+    background-color: rgb(255, 255, 255);
+    color: gray;
+    text-align: center;
+    font-size: 2vh;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        justify-content: flex-end;
+        font-size: 3vw;
+        padding: 5px;
+    }
+
+    .logo {
+        font-size: 5vw;
+        margin-right: 37%;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .menu {
+        font-size: 4vw;
+        display: block;
+        color: black;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .button button {
+        display: none;
+        width: 20vw;
+        height: 4vh;
+        font-size: 2vw;
+    }
+
+    .top-down {
+        font-size: 3vw;
+    }
+
+    .left-side {
+        padding: 50px 0px 10px 0px;
+        width: 50vw;
+    }
+
+    .bottom {
+        padding: 0px 40px;
+        gap: 40px;
+    }
+
+    .left-side span {
+        font-size: 5vw;
+    }
+
+    .right-side {
+        height: 60vh;
+    }
+
+    .left-side p {
+        font-size: 3vw;
+    }
+
+    .section-of-bottom {
+        font-weight: 100;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .section-of-bottom .first {
+        font-size: 3vw;
+    }
+
+    .hero-section-2 {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding: 0px 40px;
+
+    }
+
+    .right-text {
+        text-align: center;
+        padding: 0px 0px;
+        width: 100%;
+    }
+
+    .right-text span {
+        font-size: 6vw;
+    }
+
+    .right-text p {
+        padding: 20px 0px;
+        font-size: 3vw;
+    }
+
+    .left-picture {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .hero-section-3 {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 10px 70px;
+        height: 100vh;
+    }
+
+    .left-text {
+        width: 40vw;
+    }
+
+    .right-image {
+        background-position: left;
+    }
+
+    .left-text span {
+        font-size: 5vw;
+    }
+
+    .services span {
+        font-size: 4vw;
+    }
+
+    .branding-service p {
+        font-size: 2.9vw;
+    }
+
+    .services {
+        gap: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .services hr {
+        margin: 0px;
+    }
+
+    .hero-section-4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px 70px;
+        text-align: center;
+    }
+
+    .main-text {
+        font-size: 7vw;
+    }
+
+    .center-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .left-img-1 {
+        margin: 20px;
+        width: 100%;
+        height: 13vh;
+        background-position: bottom;
+    }
+
+    .center-img-1 {
+        margin: 20px;
+        width: 100%;
+        height: 13vh;
+        background-position: center;
+    }
+
+    .right-text-1 span {
+        font-size: 10vw;
+    }
+
+    .right-text-1 p {
+        font-size: 3vw;
+    }
+
+    footer {
+        font-family: 'Montserrat';
+        background-color: black;
+        color: white;
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    footer button {
+        height: 5vh;
+        width: 40vw;
+    }
+    .subfooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2vw;
+    }
+}
